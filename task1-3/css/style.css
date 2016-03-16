@@ -1,0 +1,15 @@
+/*初始化*/
+*{ margin:0; padding:0;}
+body{padding:20px;}
+div{ border:1px #000 solid;}
+.pic{width:80px; height:80px; background:#CCC; border:1px #000 solid; margin:20px 20px;}
+.topic{ font-size:18px; font-family:Verdana, Geneva, sans-serif; color:#006;}
+#logo{width:80px; height:80px; background:#CCC; border:1px #000 solid; margin-top:20px; float:left; margin-left:20px; }
+
+#content{ padding:20px 160px 20px 240px; overflow:hidden; min-width:500px;}
+	#middle{ width:100%; float:left;}
+	#middle p{ padding:20px; font-size:14px; text-indent:2em; font-family:Verdana, Geneva, sans-serif;}
+
+	#left{ width:200px; height:120px; position:relative; left:-220px; float:left; margin-left:-100%;}
+		#left p{font-family:Verdana, Geneva, sans-serif; color:#000;}
+	#right{ width:120px; position:relative; float:left; margin-left:-140px; right:-160px;}
