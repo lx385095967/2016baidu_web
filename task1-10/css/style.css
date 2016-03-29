@@ -1,0 +1,60 @@
+	*{
+		margin: 0;
+		padding: 0;}
+	ul{
+		list-style:none;}
+
+    @media (min-width: 641px){
+        .flex-container {
+            /* We first create a flex layout context */
+            display: flex;
+            align-items:center;
+            /**/
+            /* Then we define the flow direction and if we allow the items to wrap 
+            * Remember this is the same as:
+            * flex-direction: row;
+            * flex-wrap: wrap;
+            */
+            flex-flow: row wrap;
+            /* Then we define how is distributed the remaining space */
+            justify-content: space-between;
+        }
+    }
+    @media (max-width: 640px){
+        .flex-container {
+            /* We first create a flex layout context */
+            display: flex;
+            align-items:flex-start;
+            /**/
+            /* Then we define the flow direction and if we allow the items to wrap 
+            * Remember this is the same as:
+            * flex-direction: row;
+            * flex-wrap: wrap;
+            */
+            flex-flow: row wrap;
+            /* Then we define how is distributed the remaining space */
+            justify-content: space-between;
+        }
+    }    
+	.flex-item{
+		box-sizing:border-box;
+		margin-top: 10px;
+		color: white;
+		font-weight: bold;
+		font-size: 3em;
+		text-align: center;
+		width: 150px;
+		background: #333333;}
+	.item1{
+		line-height: 120px;}
+	.item2{
+		line-height: 100px;}
+	.item3{
+		line-height: 40px;}
+	.item4{
+		line-height: 200px;}
+	@media(max-width: 640px){
+	.item4{
+		order:-1;
+		}
+	}
